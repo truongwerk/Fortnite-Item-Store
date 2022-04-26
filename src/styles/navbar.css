@@ -1,0 +1,28 @@
+.navbar {
+	display: flex;
+	background-color: black;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 150px;
+}
+.navbar ul {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+}
+.navbar ul li {
+	margin-right: 20px;
+}
+.navbar .shopBtn {
+	color: #f5f411;
+	font-size: 2rem;
+	font-weight: 400;
+}
+.cartIcon {
+	width: 40px;
+}
+#badge{
+	font-size: 2rem ;
+}
