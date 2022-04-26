@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+import PropTypes from "prop-types";
 import Button from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
 
@@ -6,7 +8,7 @@ import "../styles/navbar.css";
 import logo from "../img/logo.png";
 import cart from "../img/cart.svg";
 
-function Navbar() {
+function Navbar(props) {
 	return (
 		<header className="navbar">
 			<Link to="/">
@@ -22,7 +24,7 @@ function Navbar() {
 				</li>
 				<li>
 					<Link to="/cart">
-						<Badge badgeContent={1} color="error" id="badge">
+						<Badge badgeContent={props.item} max={10} color="error" id="badge">
 							<img src={cart} alt="cart icon" className="cartIcon" />
 						</Badge>
 					</Link>
@@ -31,5 +33,8 @@ function Navbar() {
 		</header>
 	);
 }
+Navbar.propTypes = {
+	item: PropTypes.number,
+};
 
 export default Navbar;

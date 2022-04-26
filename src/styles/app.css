@@ -1,3 +1,14 @@
 h1 {
 	font-size: 3rem;
 }
+
+html {
+	background-color: rgb(194, 181, 181);
+	min-height: 100vh;
+}
+
+.content {
+	width: 98%;
+	max-width: 1100px;
+	margin: 40px auto;
+}
