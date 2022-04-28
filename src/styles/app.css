@@ -10,5 +10,37 @@ html {
 .content {
 	width: 98%;
 	max-width: 1100px;
-	margin: 40px auto;
+	margin: 0 auto;
+	padding-top: 120px;
+	margin-bottom: 40px;
+}
+
+.notFound img {
+	width: 100%;
+
+	margin-bottom: 20px;
+}
+
+.notFound a {
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.table img {
+	width: 50px;
+	background-color: rgb(238, 255, 0);
+}
+.table {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#purchase {
+	margin-top: 10px;
+	align-self: end;
+}
+
+.table .vbuck{
+	width: 30px;
+	background-color: white;
 }

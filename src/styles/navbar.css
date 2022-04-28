@@ -3,6 +3,9 @@
 	background-color: black;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 }
 
 .logo {
@@ -23,11 +26,11 @@
 .cartIcon {
 	width: 40px;
 }
-#badge{
-	font-size: 2rem ;
+#badge {
+	font-size: 2rem;
 }
 
-@media screen  and (max-width: 400px){
+@media screen and (max-width: 400px) {
 	.logo {
 		width: 100px;
 	}

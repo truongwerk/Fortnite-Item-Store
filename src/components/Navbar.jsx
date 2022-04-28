@@ -16,9 +16,9 @@ function Navbar(props) {
 			</Link>
 			<ul>
 				<li>
-					<Link to="/shop">
+					<Link to="/store" style={{ textDecoration: "none" }}>
 						<Button variant="text" size="large" className="shopBtn">
-							Shop
+							Store
 						</Button>
 					</Link>
 				</li>

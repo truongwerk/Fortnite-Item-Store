@@ -1,0 +1,110 @@
+.itemImage {
+	width: 100%;
+	margin: auto 0;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(211, 51, 198) 91%);
+}
+.itemDetail {
+	background-color: white;
+	padding: 10px;
+	-webkit-box-shadow: 3px 3px 11px 2px #000000;
+	box-shadow: 3px 3px 11px 2px #000000;
+	border-radius: 10px;
+}
+
+.itemDetail h1 {
+	font-size: 2.5rem;
+}
+
+.sidePanel p {
+	margin: 10px 0;
+	font-size: 1.5rem;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+}
+.rating h4 {
+	margin-left: 10px;
+	font-size: 2rem;
+	color: red;
+	font-weight: 200;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.sidePanel h2 {
+	font-size: 2rem;
+	margin: 10px 0;
+	color: rgb(172, 15, 15);
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.quantity {
+	display: flex;
+	align-items: center;
+}
+
+.quantity .quantityBtn {
+	height: 50px;
+	width: 50px;
+}
+
+.quantityDisplay {
+	border: 1px solid rgb(218, 97, 97);
+	height: 50px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.quantityDisplay p {
+	color: rgb(165, 8, 8);
+	font-weight: bold;
+	font-size: 2rem;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.itemPrice {
+	display: flex;
+	align-items: center;
+}
+
+.itemPrice img {
+	width: 40px;
+	margin-left: 5px;
+	background: none;
+}
+
+.totalPrice {
+	display: flex;
+	align-items: center;
+}
+.totalPrice p {
+	font-size: 2rem;
+	margin: 10px 0;
+	color: rgb(172, 15, 15);
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.totalPrice img {
+	width: 40px;
+	margin-left: 5px;
+	background: none;
+}
+
+@media screen and (min-width: 600px) {
+	.itemDetail {
+		display: flex;
+		justify-content: space-around;
+	}
+	.itemImage {
+		width: 50%;
+	}
+
+	.sidePanel {
+		width: 45%;
+	}
+}

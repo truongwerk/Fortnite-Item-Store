@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
@@ -6,14 +6,35 @@ import { LazyLoadComponent } from "react-lazy-load-image-component";
 import Skeleton from "@mui/material/Skeleton";
 
 import Rating from "@mui/material/Rating";
-import "../styles/shop.css";
+import "../styles/store.css";
+import vbuck from "../img/vbuck.png";
 
-const Shop = (props) => {
+const Store = (props) => {
+	const [data1, setData1] = useState([]);
+	const [data2, setData2] = useState([]);
+	const [data3, setData3] = useState([]);
+
+	useEffect(() => {
+		setData1(props.store.slice(0, 8));
+		setData2(props.store.slice(8, 16));
+		setData3(props.store.slice(16));
+	}, [props]);
+
 	return (
 		<>
 			<div className="itemsBox">
+				<LazyLoadComponent visibleByDefault={true}>
+					{data1.map((element) => (
+						<Item key={element.itemId} itemData={element} />
+					))}
+				</LazyLoadComponent>
 				<LazyLoadComponent>
-					{props.store.map((element) => (
+					{data2.map((element) => (
+						<Item key={element.itemId} itemData={element} />
+					))}
+				</LazyLoadComponent>
+				<LazyLoadComponent>
+					{data3.map((element) => (
 						<Item key={element.itemId} itemData={element} />
 					))}
 				</LazyLoadComponent>
@@ -21,7 +42,7 @@ const Shop = (props) => {
 		</>
 	);
 };
-Shop.propTypes = {
+Store.propTypes = {
 	store: PropTypes.arrayOf(PropTypes.object),
 };
 
@@ -30,7 +51,7 @@ function Item(props) {
 	return (
 		<div className="shopItem">
 			<Link
-				to={`/shop/${props.itemData.itemId}`}
+				to={`/store/${props.itemData.itemId}`}
 				state={{ id: props.itemData.itemId }}
 			>
 				{loading ? (
@@ -51,9 +72,11 @@ function Item(props) {
 				></img>
 				<div>
 					<h3>{props.itemData.item.name}</h3>
-					<h4>{`${props.itemData.store.cost}$`}</h4>
+					<div className="price">
+						<h4>{props.itemData.store.cost}</h4>
+						<img src={vbuck} alt="vbuck" />
+					</div>
 					<Rating
-						name="read-only"
 						value={props.itemData.item.ratings.avgStars}
 						precision={0.1}
 						readOnly
@@ -67,4 +90,4 @@ Item.propTypes = {
 	itemData: PropTypes.object,
 };
 
-export default Shop;
+export default Store;
