@@ -1,6 +1,5 @@
 # Fortnite Item Store
 
-
 ## Store: https://truongwerk.github.io/Fortnite-Item-Store/#/store
 
 ![App Screenshot](./screenshots/store.png)
@@ -12,6 +11,10 @@
 ## Cart: https://truongwerk.github.io/Fortnite-Item-Store/#/cart
 
 ![App Screenshot](./screenshots/cart.png)
+
+## 404 Page: https://truongwerk.github.io/Fortnite-Item-Store/#/WRONG/ADDRESS
+
+![App Screenshot](./screenshots/404.png)
 
 ## Features
 
