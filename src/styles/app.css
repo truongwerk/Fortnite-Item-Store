@@ -40,7 +40,24 @@ html {
 	align-self: end;
 }
 
-.table .vbuck{
+.table .vbuck {
 	width: 30px;
 	background-color: white;
+}
+
+.homePage {
+	text-align: center;
+	text-decoration: none;
+}
+.homePage h1 {
+	font-size: 4rem;
+}
+.homePage h2{
+	font-size: 3rem;
+}
+.homePage a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

@@ -74,7 +74,21 @@ const App = () => {
 };
 
 function HomePage() {
-	return <h1>Home</h1>;
+	return (
+		<div className="homePage">
+			<h1>Fortnite Shopping Cart</h1>
+			<h2>
+				© 2022 Create by{" "}
+				<a
+					href="https://github.com/truongwerk"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					Tong Quang Truong
+				</a>
+			</h2>
+		</div>
+	);
 }
 
 export default App;
