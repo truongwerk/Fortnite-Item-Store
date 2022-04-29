@@ -1,18 +1,15 @@
 # Fortnite Item Store
 
-##Live Demo
 
-[Live](https://truongwerk.github.io/Memory-games/)
-
-## Store
+## Store: https://truongwerk.github.io/Fortnite-Item-Store/#/store
 
 ![App Screenshot](./screenshots/store.png)
 
-## Item
+## Item: https://truongwerk.github.io/Fortnite-Item-Store/#/store/f76d3e76-a0f5-4ebd-8dd5-875cbb291d72
 
 ![App Screenshot](./screenshots/item.png)
 
-## Cart
+## Cart: https://truongwerk.github.io/Fortnite-Item-Store/#/cart
 
 ![App Screenshot](./screenshots/cart.png)
 
