@@ -28,7 +28,7 @@
 ## Build With:
 
 - React.
-- React router,
+- React router.
 - Mui.
 - Css.
 - Vite.
