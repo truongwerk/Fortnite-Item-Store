@@ -23,7 +23,7 @@
 - Lazy loading.
 - Add multiple items to cart.
 - Show cart and total cost.
-- Responsive
+- Responsive.
 
 ## Build With:
 
